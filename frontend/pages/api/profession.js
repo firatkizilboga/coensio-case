@@ -14,17 +14,12 @@ export default async function handler(req, res) {
         profession: req.body.profession
     })
 }).then(response => {
-    console.log(response)
-    if (!response.ok) {
-        res.status(500).json({ error: 'Bad request' })
-    }
     return response.json()
 }
     )
 .then(data => {
     console.log(data)
     res.status(200).json(data)
-    
 }
 )
 
