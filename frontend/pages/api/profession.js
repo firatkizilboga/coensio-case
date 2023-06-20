@@ -14,6 +14,7 @@ export default async function handler(req, res) {
         profession: req.body.profession
     })
 }).then(response => {
+    console.log(response)
     if (!response.ok) {
         res.status(500).json({ error: 'Bad request' })
     }
