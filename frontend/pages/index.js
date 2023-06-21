@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRef, useState } from 'react'
-import Loader from '../components/loader'
+import Loader from '../components/Loader'
 import MultipleChoiceQuestion from '../components/MultipleChoiceQuestion';
 import FreeTextQuestion from '../components/FreeTextQuestion';
 
