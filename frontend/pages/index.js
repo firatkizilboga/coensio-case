@@ -25,13 +25,13 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Firat Kizilboga Coens.io Case Project!</title>
+        <title>Test Maker</title>
         <meta name="description" content="Coens.io case project!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className='p-5'>
-          <h1>Coens.io Case Project</h1>
+          <h1>Test Maker</h1>
           <div className='bg-accent'>
             <div className='d-flex'>
             <input ref={input_ref} type='text' className='form-control' placeholder='Enter a position!' />
@@ -43,7 +43,7 @@ export default function Home() {
                   setAnswers({});
                   alert('Loading...', loading);
                   
-                  await fetch('/api/profession', {
+                  fetch('/api/profession', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json'
